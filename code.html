@@ -94,6 +94,14 @@
         let video3 = document.getElementById("vid4");
         let video4 = document.getElementById("vid5");
 
+        function playall() {
+            vid1.play();
+            vid2.play();
+            vid3.play();
+            vid4.play();
+            vid5.play();
+        }
+
         function play1() {
 
 
@@ -160,8 +168,15 @@
             }
         }
     </script>
+    <div class="playall">
+
+    </div>
     <div class="sort">
+        <button onclick="playall()">Play all siuu's</button>
+        <br>
+        <br>
         <button onclick="sorting()">Sort by siuu ID</button>
+
     </div>
     <div class="input">
         <input type="text" id="input" onkeyup="ronaldo()" placeholder="Search a siuu..." title="type">
