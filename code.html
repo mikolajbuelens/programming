@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/script.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Siuuu</title>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+
+            <a href="index.html"> Home</a>
+            <a href="Learn.html"> Learn</a>
+            <a class="active" href="code.html"> Siuuuu</a>
+            <a href="#"> Links</a>
+            <a href="#"> About</a>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1> {M1k0} </h1>
+        <h2>Your guide to coding</h2>
+        <h3>Made by Mikolaj Buelens</h3>
+    </div>
+
+    <div class="titel">
+        <h1> <span style="font-size: 100px; color: #4285F4;">S</span><span style="color: #DB4437;">i</span><span
+                style="color: #F4B400;">u</span><span style="color: #4285F4;">u</span><span
+                style="color: #0F9D58;">u</span><span style="color: #DB4437;">u</span></h1>
+    </div>
+    <script>
+        function ronaldo() {
+            // Declare variables
+            var input, filter, ul, li, h1, i, txtValue;
+            input = document.getElementById("input");
+            filter = input.value.toUpperCase();
+            ul = document.getElementsByClassName("list");
+            li = document.querySelectorAll(".list li");
+            console.log(li);
+            console.log(ul)
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                h1 = li[i].querySelectorAll(".list h1")[0];
+                txtValue = h1.textContent || h1.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+
+        }
+
+        function sorting() {
+            var list, i, switching, b, shouldSwitch;
+            list = document.getElementsByClassName('list');
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                b = document.querySelectorAll(".list h3");
+                // Loop through all list items:
+                for (i = 0; i < (b.length - 1); i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Check if the next item should
+                    switch place with the current item: */
+                    if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                        /* If next item is alphabetically lower than current item,
+                        mark as a switch and break the loop: */
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark the switch as done: */
+                    b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                    switching = true;
+                }
+            }
+        }
+        let video1 = document.getElementById("vid1");
+        let pause1 = document.getElementById("vid2")
+        let video2 = document.getElementById("vid3");
+        let video3 = document.getElementById("vid4");
+        let video4 = document.getElementById("vid5");
+
+        function play1() {
+
+
+            if (vid1.paused) {
+                b1.src = "images/pause_circle_FILL0_wght400_GRAD0_opsz48.png";
+                vid1.play();
+            } else {
+                vid1.pause();
+
+                b1.src = "images/play_circle_FILL0_wght400_GRAD0_opsz48.png";
+            }
+            
+        }
+
+            function play2() {
+
+
+                if (vid2.paused) {
+                    b2.src = "images/pause_circle_FILL0_wght400_GRAD0_opsz48.png";
+                    vid2.play();
+                } else {
+                    vid2.pause();
+
+                    b2.src = "images/play_circle_FILL0_wght400_GRAD0_opsz48.png";
+                }
+            }
+            function play3() {
+
+
+if (vid3.paused) {
+    b3.src = "images/pause_circle_FILL0_wght400_GRAD0_opsz48.png";
+    vid3.play();
+} else {
+    vid3.pause();
+
+    b3.src = "images/play_circle_FILL0_wght400_GRAD0_opsz48.png";
+}
+}
+function play4() {
+
+
+if (vid4.paused) {
+    b4.src = "images/pause_circle_FILL0_wght400_GRAD0_opsz48.png";
+    vid4.play();
+} else {
+    vid4.pause();
+
+    b4.src = "images/play_circle_FILL0_wght400_GRAD0_opsz48.png";
+}
+}
+function play5() {
+
+
+if (vid5.paused) {
+    b5.src = "images/pause_circle_FILL0_wght400_GRAD0_opsz48.png";
+    vid5.play();
+} else {
+    vid5.pause();
+
+    b5.src = "images/play_circle_FILL0_wght400_GRAD0_opsz48.png";
+}
+}
+
+               
+    </script>
+    <div class="sort">
+        <button onclick="sorting()">Sort by siuu ID</button>
+    </div>
+    <div class="input">
+        <input type="text" id="input" onkeyup="ronaldo()" placeholder="Search a siuu..." title="type">
+    </div>
+    <ul class="list">
+        <li><video paused id="vid1" width="400px" src="videos/sii1.mp4"> </video>
+            <h1> Siuu</h1>
+            <h3>Siuu ID:6969</h3> <input onclick="play1()" type="image"
+                src="/images/play_circle_FILL0_wght400_GRAD0_opsz48.png" id="b1">
+        </li>
+        <li><video id="vid2" width="400px" src="videos/sii2.mp4"> </video>
+            <h1> Siuuu</h1>
+            <h3>Siuu ID:80085</h3> <input onclick="play2()" type="image"
+                src="/images/play_circle_FILL0_wght400_GRAD0_opsz48.png" id="b2">
+        </li>
+        <li><video id="vid3" width="400px" src="videos/sii3.mp4"> </video>
+            <h1> Siuuuu</h1>
+            <h3>Siuu ID:21</h3> <input onclick="play3()" type="image"
+                src="/images/play_circle_FILL0_wght400_GRAD0_opsz48.png" id="b3">
+        </li>
+        <li><video id="vid4" width="400px" src="videos/sii4.mp4"> </video>
+            <h1> Siuuuuu</h1>
+            <h3>Siuu ID:040500</h3> <input onclick="play4()" type="image"
+                src="/images/play_circle_FILL0_wght400_GRAD0_opsz48.png" id="b4">
+        </li>
+        <li><video id="vid5" width="400px" src="videos/sii5.mp4"> </video>
+            <h1> Siuuuuuu</h1>
+            <h3>Siuu ID:7</h3> <input onclick="play5()" type="image"
+                src="/images/play_circle_FILL0_wght400_GRAD0_opsz48.png" id="b5">
+        </li>
+    </ul>
+
+
+</body>
+
+</html>

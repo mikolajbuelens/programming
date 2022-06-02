@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: #321d71;
+    color: #FFFF;
+    filter: drop-shadow(0px 8px 4px grey);
+}
+
+.header h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 80pt;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.header h2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25pt;
+    font-weight: 400;
+}
+
+.header h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: 400;
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #321d71;
+    text-align: center;
+
+}
+
+.nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 100px;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+.nav a.active {
+    color: yellow;
+}
+
+.intro p {
+    color: #321d71;
+    padding: 15px;
+    box-shadow: 5px 10px 10px #888888;
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+}
+
+.languages {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.languages a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #321d71;
+    margin-left: 2px;
+    margin-right: 25px;
+}
+
+.languages a.active {
+    background-color: #1e1143;
+    color: yellow;
+}
+
+.testing h2 {
+    margin-left: 100px;
+    margin-top: 100px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.testing {
+    margin-left: 100px;
+    margin-top: 100px;
+    filter: drop-shadow(0px 4px 4px grey);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.testing a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #321d71;
+    color: #FFF;
+    border-radius: 25px;
+
+
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#kurt {
+    margin-left: 10px;
+    width: 200px;
+}
+
+.titel {
+    font-family: 'Noto Sans';
+    font-size: 40px;
+    text-align: center;
+}
+
+.input {
+    text-align: center;
+}
+
+#input {
+    background-image: url('../images/search_FILL0_wght400_GRAD0_opsz48.png');
+    background-position: 0px 0px;
+    background-size: 40px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 50%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
+.input {
+    text-align: center;
+}
+
+
+.list {
+    margin-left: 50px;
+    border: solid;
+    list-style: none;
+    padding: 0;
+}
+
+.list video {
+    border: solid;
+    filter: drop-shadow(0px 8px 4px grey);
+}
+
+.list li {
+    border: 1px solid #ddd;
+    /* Add a border to all links */
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    /* Grey background color */
+    padding: 12px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove default text underline */
+    font-size: 18px;
+    /* Increase the font-size */
+    display: block;
+    /* Make it into a block element to fill the whole list */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sort button {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 70px;
+    background-color: #321d71;
+    padding: 8px;
+    border-radius: 25px;
+    filter: drop-shadow(0px 8px 4px grey);
+    border: none;
+    cursor: pointer;
+}
+
+.list img {
+    width: 60px;
+   
+}
