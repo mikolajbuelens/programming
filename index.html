@@ -3,42 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming</title>
-    <script src="/scripts/script.js" type="module"></script>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
 </head>
+
+<!-- *992px and 600px width = typical breaking points  -->
+<!-- TODO: Make site responsive-->
 
 <body>
     <div class="nav">
         <ul>
-    
+
             <a class="active" href="index.html"> Home</a>
             <a href="Learn.html"> Learn</a>
             <a href="code.html"> Site code</a>
-            <a href="#"> Links</a>
-            <a href="#"> About</a>
+            <a href="link.html"> Links</a>
+            <a href="about.html"> About</a>
         </ul>
     </div>
 
     <div class="header">
-        <h1> {M1k0} </h1>
-        <h2>Your guide to coding</h2>
+        <a href="index.html">
+            <h1> {M1k0} </h1>
+            <h2>Your guide to coding</h2></a>
         <h3>Made by Mikolaj Buelens</h3>
     </div>
+
     <div class="languages">
         <a href="index dutch.html">Dutch</a>
         <a class="active" href="index.html">English</a>
-        
+
     </div>
     <div class="intro">
-        <p>Hallo world, my name is Mikolaj and welcome to my website, <span style= "font-family: 'Share Tech Mono', monospace">M1k0!</span>
+        <p>Hallo world, my name is Mikolaj and welcome to my website, <span
+                style="font-family: 'Share Tech Mono', monospace">M1k0!</span>
             I'am a student at EHB were I'm currently studying multimedia and creative technology.
             On this website you can expect to find helpfull tips and tools to learn more
             about programming. I made this site in preperation of my exams to beter understand
-            progamming languages such as: HTML, CSS and mainly Javascript. To start simply go to the <a style="font-weight: 600" href="Learn.html"> Learn page.</a></p>
+            progamming languages such as: HTML, CSS and mainly Javascript. To start simply go to the <a
+                style="font-weight: 600" href="Learn.html"> Learn page.</a></p>
     </div>
 
     <canvas id="canvas" width="300" height="350"> </canvas>

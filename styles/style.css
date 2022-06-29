@@ -1,94 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
 }
 
-.header {
-    text-align: center;
-    background-color: #321d71;
-    color: #FFFF;
-    filter: drop-shadow(0px 8px 4px grey);
-}
 
-.header h1 {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 80pt;
-    font-weight: 500;
-    padding-top: 20px;
-}
 
-.header h2 {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 25pt;
-    font-weight: 400;
-}
 
-.header h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10pt;
-    font-weight: 400;
-    margin-top: 5px;
-    padding-bottom: 15px;
-}
-
-.nav {
-    overflow: hidden;
-    background-color: #321d71;
-    text-align: center;
-
-}
-
-.nav a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Share Tech Mono', monospace;
-    padding: 100px;
-}
-
-.nav a:hover {
-    color: yellow;
-}
-
-.nav a.active {
-    color: yellow;
-}
-
-.intro p {
-    color: #321d71;
-    padding: 15px;
-    box-shadow: 5px 10px 10px #888888;
-    text-align: justify;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 25px;
-}
-
-.languages {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.languages a {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFF;
-    border-radius: 25px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #321d71;
-    margin-left: 2px;
-    margin-right: 25px;
-}
-
-.languages a.active {
-    background-color: #1e1143;
-    color: yellow;
-}
 
 .testing h2 {
     margin-left: 100px;

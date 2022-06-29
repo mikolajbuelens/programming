@@ -1,4 +1,5 @@
 "use strict";
+
 let amount = 0;
 const click = "click(s)";
 let btn = document.getElementById("btn");
@@ -61,10 +62,13 @@ for (let i = 0; i < 5000; i++) {
 
 
 
-
 /*function check() {
     image.checked = true;
 }
 function uncheck() {
     image.checked = false;
-}*/
+}
+
+let number = 10;
+number +=5; */
+
